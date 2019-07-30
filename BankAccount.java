@@ -9,9 +9,13 @@ public class BankAccount {
 		
 		public void set_balance(double new_amount) {
 			
-			
+			if (new_amount<=50)
+			{
 			balance=balance+new_amount;
 			System.out.println("Available Balance " + balance);
+		}
+			else
+				System.out.println("Only amount less than $50 can be deposited ");
 		}
 		
 		public void withdraw(double withdraw_amount) {
